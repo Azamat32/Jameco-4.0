@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/evo-calendar.css" />
+
+    <link rel="stylesheet" href="css/evo-calendar.royal-navy.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="container">
+            <div class="nav_header">
+                <div class="language_btns">
+                    <a href="#!">КАЗ</a>
+                    <a href="#!">РУС</a>
+                    <a href="#!">ENG</a>
+                </div>
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="Іздеу">
+
+                    </input>
+                </div>
+            </div>
+            <div class="nav_content">
+                <div class="nav_content_title">
+                    <img src="./img/Logo.svg" alt="">
+
+                </div>
+            </div>
+            <div class="nav_list-body">
+                <div class="nav_list">
+                    <a class="nav_links" href="index.html">Басты</a>
+                    <a class="nav_links " href="news.html">Жаңалықтар</a>
+                    <a class="nav_links " href="about.html">Біз туралы</a>
+                    <a class="nav_links " href="talapker.html">Талапкерге</a>
+                    <a class="nav_links " href="stdents.html">Студенттерге</a>
+                    <a class="nav_links" href="gallery.html">Галерея</a>
+                    <a class="nav_links" href="contacts.html">Байланыс</a>
+                    <a class="nav_links active" href="date.html">Күнтізбе</a>
+                </div>
+                <div class="nav_burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Header start ========== -->
+    <section class="header">
+        <div class="container">
+            <div class="header_body">
+                <div class="header_title">
+                    <span class="header_span"></span>
+                    <div class="title_word">
+                        <h1>Күнтізбе</h1>
+                        <a class="title_cursive" href="#!">JIHC</a>
+                        <span>/</span>
+                        <a href="date.html">Күнтізбе</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Header end ========== -->
+    <!-- ========== Students content start ========== -->
+    <section class="date">
+        <div class="container">
+            <div class="page_content">
+                <div id="calendar"></div>
+                <span class="event-indicator">
+
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Students content end ========== -->
+    <!-- ========== Footer start ========== -->
+    <section class="footer">
+        <img style="width: 100%; user-select: none;" src="./img/OIU.png" alt="">
+        <div class="container">
+            <div class="footer_body">
+
+                <div class="footer_content">
+                    <div class="footer_logo"><img src="./img/logo white 1.png" alt=""></div>
+                    <div class="footer_words">
+                        <p>2020-2021 <br> Жамбыл Инновациялық Жоғары Колледжі</p>
+                        <p>ҚР, Жамбыл Облысы, Тараз Қаласы, <br> Пушкин көшесі, 154</p>
+                        <p>Колледж қабылдау бөлімінің байланыс телефоны: <br> +77262430713, +77477802727</p>
+                    </div>
+                    <div class="footer_icons">
+                        <a href="#!" class="footer_icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#!" class="footer_icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#!" class="footer_icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Footer end ========== -->
+
+
+    <script src="js/main.js"></script>
+    <script src="js/evo-calendar.js"></script>
+
+    <script>
+        // initialize your calendar, once the page's DOM is ready
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                theme: 'Royal navy',
+                calendarEvents: [{
+                    id: 'bHay68s', // Event's ID (required)
+                    name: "New Year", // Event name (required)
+                    badge: "05/01 - 05/05",
+                    date: ["May/1/2021", "May/5/2021"], // Event date (required)
+                    description: "dadq",
+                    type: "holiday", // Event type (required)
+                    everyYear: true // Same event every year (optional)
+                }, {
+                    id: 'bHda',
+                    name: "Vacation Leave",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    date: ["February/13/2020", "February/15/2020"], // Date range
+                    description: "Vacation leave for 3 days.", // Event description (optional)
+                    type: "event",
+                    color: "#63d867" // Event custom color (optional)
+                }]
+            })
+
+        })
+    </script>
+</body>
+
+</html>
